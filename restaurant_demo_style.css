@@ -1,0 +1,338 @@
+/* ================= RESET ================= */
+* {
+  margin: 0; /* enlève les marges par défaut des éléments */
+  padding: 0; /* enlève les espacements internes par défaut */
+  box-sizing: border-box; 
+  /* inclut padding + border dans la largeur → évite les bugs de taille */
+}
+
+/* 👉 Incidence :
+- ton design est propre et prévisible
+- tous les navigateurs affichent pareil
+*/
+
+
+/* ================= STYLE GLOBAL ================= */
+body {
+  font-family: Arial, sans-serif; 
+  /* police simple et lisible */
+
+  background: #faf7f2; 
+  /* couleur de fond beige clair → ambiance douce/resto */
+
+  color: #2b2b2b; 
+  /* couleur du texte (gris foncé, plus doux que noir) */
+
+  line-height: 1.6; 
+  /* espace entre les lignes → lecture plus confortable */
+}
+
+/* 👉 Incidence :
+- site lisible
+- ambiance visuelle cohérente
+*/
+
+
+/* ================= HERO (BANNIÈRE) ================= */
+.hero {
+  min-height: 90vh; 
+  /* prend 90% de la hauteur de l’écran → effet “plein écran” */
+
+  background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+  url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4");
+  /* image + filtre sombre (overlay noir transparent) */
+
+  background-size: cover; 
+  /* l’image remplit tout l’espace */
+
+  background-position: center; 
+  /* centre l’image */
+
+  color: white; 
+  /* texte en blanc pour contraster avec fond sombre */
+
+  padding: 30px 10%; 
+  /* espace intérieur (haut/bas + gauche/droite) */
+}
+
+/* 👉 Incidence :
+- effet “site pro”
+- texte lisible sur image
+- visuel impactant dès l’arrivée
+*/
+
+
+/* ================= NAVIGATION ================= */
+nav {
+  display: flex; 
+  /* met les éléments en ligne */
+
+  justify-content: space-between; 
+  /* espace entre logo et menu */
+
+  align-items: center; 
+  /* aligne verticalement */
+}
+
+/* 👉 Incidence :
+- menu propre, bien aligné
+*/
+
+
+nav ul {
+  display: flex; 
+  /* met les liens en ligne */
+
+  gap: 25px; 
+  /* espace entre les liens */
+
+  list-style: none; 
+  /* enlève les points de liste */
+}
+
+/* 👉 Incidence :
+- menu horizontal moderne
+*/
+
+
+nav a {
+  color: white; 
+  /* texte blanc */
+
+  text-decoration: none; 
+  /* enlève le soulignement */
+}
+
+/* 👉 Incidence :
+- style propre (pas “lien bleu classique”)
+*/
+
+
+/* ================= HERO CONTENT ================= */
+.hero-content {
+  max-width: 650px; 
+  /* limite la largeur du texte */
+
+  margin-top: 150px; 
+  /* descend le contenu vers le centre */
+}
+
+/* 👉 Incidence :
+- texte lisible (pas trop large)
+- mieux positionné visuellement
+*/
+
+
+.hero-content h2 {
+  font-size: 52px; 
+  /* gros titre */
+
+  margin-bottom: 20px; 
+  /* espace en dessous */
+}
+
+/* 👉 Incidence :
+- effet “titre principal fort”
+*/
+
+
+.hero-content p {
+  font-size: 20px; 
+  /* texte plus gros que normal */
+
+  margin-bottom: 30px; 
+  /* espace avant bouton */
+}
+
+/* 👉 Incidence :
+- meilleure lisibilité
+*/
+
+
+/* ================= BOUTONS ================= */
+.btn,
+button {
+  background: #c0843e; 
+  /* couleur dorée → style restaurant */
+
+  color: white;
+
+  border: none; 
+  /* enlève bordure */
+
+  padding: 14px 26px; 
+  /* taille du bouton */
+
+  border-radius: 30px; 
+  /* arrondi (effet moderne) */
+
+  text-decoration: none;
+
+  font-weight: bold;
+
+  cursor: pointer; 
+  /* curseur main au survol */
+}
+
+/* 👉 Incidence :
+- bouton stylé et cliquable
+- attire l’attention
+*/
+
+
+/* ================= SECTIONS ================= */
+section {
+  padding: 80px 10%; 
+  /* espace autour des sections */
+}
+
+/* 👉 Incidence :
+- site aéré (respire)
+*/
+
+
+section h2 {
+  font-size: 36px; 
+  /* titre section */
+
+  margin-bottom: 25px;
+}
+
+/* 👉 Incidence :
+- hiérarchie visuelle claire
+*/
+
+
+/* ================= GRID (CARTES) ================= */
+.cards {
+  display: grid; 
+  /* active grille */
+
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); 
+  /* responsive automatique */
+
+  gap: 20px; 
+  /* espace entre cartes */
+}
+
+/* 👉 Incidence :
+- s’adapte automatiquement mobile / desktop
+*/
+
+
+.card {
+  background: white;
+
+  padding: 30px;
+
+  border-radius: 14px; 
+  /* coins arrondis */
+
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08); 
+  /* ombre légère */
+}
+
+/* 👉 Incidence :
+- effet “carte moderne”
+- visuel premium
+*/
+
+
+.card h3 {
+  margin-bottom: 10px;
+}
+
+
+.card strong {
+  display: inline-block;
+
+  margin-top: 15px;
+
+  color: #c0843e; 
+  /* couleur prix */
+
+  font-size: 20px;
+}
+
+/* 👉 Incidence :
+- met en valeur les prix
+*/
+
+
+/* ================= FORMULAIRE ================= */
+form {
+  max-width: 500px; 
+  /* limite largeur */
+
+  display: flex;
+
+  flex-direction: column; 
+  /* éléments en colonne */
+
+  gap: 15px;
+}
+
+/* 👉 Incidence :
+- formulaire propre et lisible
+*/
+
+
+input,
+textarea {
+  padding: 14px;
+
+  border: 1px solid #ddd;
+
+  border-radius: 8px;
+
+  font-family: Arial, sans-serif;
+}
+
+/* 👉 Incidence :
+- champs modernes et confortables
+*/
+
+
+textarea {
+  min-height: 120px; 
+  /* taille minimum */
+}
+
+
+/* ================= FOOTER ================= */
+footer {
+  text-align: center;
+
+  background: #2b2b2b;
+
+  color: white;
+
+  padding: 25px;
+}
+
+/* 👉 Incidence :
+- pied de page visible et propre
+*/
+
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+
+  nav,
+  nav ul {
+    flex-direction: column; 
+    /* menu passe en vertical */
+
+    gap: 20px;
+  }
+
+  .hero-content h2 {
+    font-size: 36px; 
+    /* titre plus petit sur mobile */
+  }
+}
+
+/* 👉 Incidence :
+- site adapté mobile
+- lisible sur téléphone
+*/
