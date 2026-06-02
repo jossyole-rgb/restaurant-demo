@@ -1,23 +1,36 @@
-# Démo de restaurant
+# 🍽️ Démo de restaurant
 
-Site vitrine réalisé en HTML et CSS.
+Site vitrine moderne réalisé dans le cadre de ma formation de développeur web.
 
-## Fonctionnalités
+## Aperçu
 
-- Présentation du restaurant
-- Navigation simple
-- Section réservation
-- Mise en page responsive
+Ce projet présente un restaurant fictif avec :
+
+- Une page d'accueil attractive
+- Une présentation de l'établissement
+- Une section menu
+- Une section réservation
+- Une mise en page responsive
 
 ## Technologies utilisées
 
 - HTML5
 - CSS3
+- Git
+- GitHub Pages
 
-## Démonstration
+## Démonstration en ligne
 
 https://jossyole-rgb.github.io/restaurant-demo/
 
+## Compétences développées
+
+- Structuration d'une page web en HTML
+- Mise en forme avec CSS
+- Gestion de projet avec Git
+- Publication d'un site avec GitHub Pages
+
 ## Auteur
 
-Josseran Yole
+**Josseran Yole**
+Développeur Web en formation
