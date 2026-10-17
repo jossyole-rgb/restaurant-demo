@@ -32,5 +32,5 @@ https://jossyole-rgb.github.io/restaurant-demo/
 
 ## Auteur
 
-**Josseran Yole**
+**Josserand Yole**
 Développeur Web en formation
